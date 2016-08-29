@@ -9,6 +9,11 @@ import scrapy
 
 
 class BttiantangScrapyItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    # 电影名字
+    name = scrapy.Field()
+    # 豆瓣评分
+    douban_score = scrapy.Field()
+    # 更新时间
+    update_time = scrapy.Field()
+    # 国家
+    contry = scrapy.Field()
