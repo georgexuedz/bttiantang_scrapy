@@ -5,6 +5,9 @@ from bttiantang_scrapy.items import BttiantangScrapyItem
 
 
 class BttiantangSpider(scrapy.spiders.Spider):
+    """
+    爬取 bt天堂 首页 的电影
+    """
     name = "bttiantang"
     allowed_domains = ['bttiantang.com']
     start_urls = [
@@ -12,7 +15,6 @@ class BttiantangSpider(scrapy.spiders.Spider):
     ]
 
     def parse(self, response):
-
         for movie in response.xpath('//div[@class="item cl"]'):
             title = movie.xpath('div[@class="title"]/p[@class="tt cl"]')
             # 空的

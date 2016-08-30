@@ -9,6 +9,9 @@ import scrapy
 
 
 class BttiantangScrapyItem(scrapy.Item):
+    '''
+    BT天堂电影数据结构
+    '''
     # 电影名字
     name = scrapy.Field()
     # 豆瓣评分

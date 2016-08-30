@@ -17,6 +17,9 @@ class BttiantangScrapyPipeline(object):
 
 
 class BttiantangScrapyDoubanscorePipeline(object):
+    """
+    过滤掉豆瓣评分少于80分的电影
+    """
     MIN_DOUBAN_SCORE = 80
 
     def process_item(self, item, spider):
@@ -27,6 +30,9 @@ class BttiantangScrapyDoubanscorePipeline(object):
 
 
 class BttiantangScrapyEmailPipeline(object):
+    """
+    发送邮件
+    """
     EMAIL_ADDR_LS = ['845094708@qq.com']
     MOVIE_LS = []
 
