@@ -44,7 +44,7 @@ class BttiantangSpider(scrapy.spiders.Spider):
             score = int(big_score[0]) * 10 + int(small_score[0])
 
             item = BttiantangScrapyItem()
-            item['name'] = movie_name_ls[0]
+            item['name'] = movie_name_ls[0].encode('utf-8')
             item['update_time'] = update_date
             item['contry'] = contry
             item['douban_score'] = score
