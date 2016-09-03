@@ -33,7 +33,7 @@ class BttiantangScrapyEmailPipeline(object):
     """
     发送邮件
     """
-    EMAIL_ADDR_LS = ['845094708@qq.com']
+    EMAIL_ADDR_LS = ['****@qq.com']
     MOVIE_LS = []
 
     def process_item(self, item, spider):
