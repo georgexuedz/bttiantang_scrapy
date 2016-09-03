@@ -90,8 +90,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-MAIL_FROM = '845094708@qq.com'
-MAIL_USER = '845094708@qq.com'
-MAIL_PASS = 'pw131099'
+MAIL_FROM = '****************'
+MAIL_USER = '****************'
+MAIL_PASS = '*******'
 MAIL_HOST = 'localhost'
 MAIL_PORT = 1025
